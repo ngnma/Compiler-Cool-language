@@ -1,0 +1,63 @@
+let a:int;
+let y:int;
+let n:real;
+let c:real;
+let k:string;
+let f:string;
+let uu:bool;
+let io:bool;
+let r:int[];
+let h:real[];
+meth
+a <- (int) 2.5;
+y <- 2;
+c <- 3.5;
+n <- (real) a*c; 
+k <- "df";
+f <- in_string();
+out_string("dd");
+out_int(5);
+out_string(k);
+out_int(a);
+uu <- true;
+io <- false;
+io <- uu;
+if uu && io then out_string("uu and io is true"); fi
+if k == f then out_string("k equle f"); else out_string("k notequle f"); fi
+if k != f then out_string("k notequle f"); else out_string("k equle f"); fi
+if c == n then out_string("c equal n"); fi
+if c != n then out_string("c notequal n"); fi
+if c >= n then out_string("c biggerequal n"); fi
+if c <= n then out_string("c littleequal n"); fi
+if c < n then out_string("c lettle n"); fi
+if c > n then out_string("c bigger n"); fi
+if y == a then out_string("y equal a"); fi
+if y != a then out_string("y notequal a"); fi
+if y >= a then out_string("y biggerequal a"); fi
+if y <= a then out_string("y littleequal a"); fi
+if y < a then out_string("y lettle a"); fi
+if y > a then out_string("y bigger a"); fi
+while a<5 loop out_int(a); a <- a+1; if a == 4 then break; fi pool
+y <- y += 3;
+for(y<-1;y < 6;y += 1)
+c <- c+1.0;
+out_real(c);
+rof
+for(y<-1;y<7;y += 1)
+c <- c - 1.0;
+out_real(c);
+rof
+out_string(" ");
+r <- new Array(int,5);
+h <- new Array(real,6);
+r[4] <- 3;
+h[5] <- 1.0;
+h[3] <- 2.3;
+h[4] <- 4.5*2.0;
+r[3] <- in_int();
+
+a<- a ^ 2;
+out_int(a);
+
+
+
